@@ -1,0 +1,902 @@
+INFO - 2023-06-16 16:51:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 16:51:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 16:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 16:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-16 16:51:08 --> Array to string conversion
+in APPPATH\Views\auth\index.php on line 17.
+ 1 APPPATH\Views\auth\index.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\app\\Views\\auth\\index.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\app\\Views\\auth\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('auth/index', [], true)
+ 5 APPPATH\Controllers\Auth.php(21): view('auth/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\public\\index.php')
+INFO - 2023-06-16 16:57:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 16:57:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 16:57:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 16:57:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-16 17:00:00 --> mysqli_sql_exception: Unknown column 'status_mahasiswa' in 'field list' in E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\app\Controllers\User.php(121): CodeIgniter\Model->insert(Array)
+#8 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\User->import()
+#9 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#10 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Ag...')
+#13 {main}
+CRITICAL - 2023-06-16 17:00:00 --> Unknown column 'status_mahasiswa' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tbl_user` (`email`, `password`, `user_identitas`, `nama`, `institusi`, `wilayah`, `prodi`, `status_mahasiswa`, `role`) VALUES (\'3nindi@gmail.com\', \'$2y$10$/8nIclBpxBfXDQX3RbR5A.noAc7GOQp658QXLDy.XpMLaTZgVj9/q\', \'1917201052\', \'Nindi Wido Astri\', \'Universitas Islam Negeri Prof. KH. Saifuddin Zuhri\', \'Banyumas\', \'Pendidikan Profesi Guru\', \'Aktif\', \'responden\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_user` (`email`, `password`, `user_identitas`, `nama`, `institusi`, `wilayah`, `prodi`, `status_mahasiswa`, `role`) VALUES (\'3nindi@gmail.com\', \'$2y$10$/8nIclBpxBfXDQX3RbR5A.noAc7GOQp658QXLDy.XpMLaTZgVj9/q\', \'1917201052\', \'Nindi Wido Astri\', \'Universitas Islam Negeri Prof. KH. Saifuddin Zuhri\', \'Banyumas\', \'Pendidikan Profesi Guru\', \'Aktif\', \'responden\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_user` (`email`, `password`, `user_identitas`, `nama`, `institusi`, `wilayah`, `prodi`, `status_mahasiswa`, `role`) VALUES (\'3nindi@gmail.com\', \'$2y$10$/8nIclBpxBfXDQX3RbR5A.noAc7GOQp658QXLDy.XpMLaTZgVj9/q\', \'1917201052\', \'Nindi Wido Astri\', \'Universitas Islam Negeri Prof. KH. Saifuddin Zuhri\', \'Banyumas\', \'Pendidikan Profesi Guru\', \'Aktif\', \'responden\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_user` (`email`, `password`, `user_identitas`, `nama`, `institusi`, `wilayah`, `prodi`, `status_mahasiswa`, `role`) VALUES (:email.1:, :password:, :user_identitas:, :nama.1:, :institusi:, :wilayah:, :prodi:, :status_mahasiswa:, :role:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\User.php(121): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->import()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\public\\index.php')
+INFO - 2023-06-16 17:06:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:06:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:06:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:06:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-16 17:06:19 --> mysqli_sql_exception: Table 'kuesioner.tbl_pertanyaan' doesn't exist in E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Model.php(203): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\BaseModel.php(557): CodeIgniter\Model->doFind(false, NULL)
+#6 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\app\Controllers\Home.php(31): CodeIgniter\BaseModel->find()
+#7 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->reloadPertanyaan()
+#8 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Ag...')
+#12 {main}
+CRITICAL - 2023-06-16 17:06:19 --> Table 'kuesioner.tbl_pertanyaan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `tbl_pertanyaan`
+ORDER BY `serial_number`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_pertanyaan`
+ORDER BY `serial_number`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_pertanyaan`
+ORDER BY `serial_number`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_pertanyaan`
+ORDER BY `serial_number`', [], false)
+ 5 SYSTEMPATH\Model.php(203): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(false, null)
+ 7 APPPATH\Controllers\Home.php(31): CodeIgniter\BaseModel->find()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->reloadPertanyaan()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\public\\index.php')
+INFO - 2023-06-16 17:06:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:06:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-16 17:06:54 --> mysqli_sql_exception: Table 'kuesioner.tbl_pertanyaan' doesn't exist in E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Model.php(203): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\BaseModel.php(557): CodeIgniter\Model->doFind(false, NULL)
+#6 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\app\Controllers\Home.php(31): CodeIgniter\BaseModel->find()
+#7 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->reloadPertanyaan()
+#8 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Ag...')
+#12 {main}
+CRITICAL - 2023-06-16 17:06:54 --> Table 'kuesioner.tbl_pertanyaan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `tbl_pertanyaan`
+ORDER BY `serial_number`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_pertanyaan`
+ORDER BY `serial_number`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_pertanyaan`
+ORDER BY `serial_number`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_pertanyaan`
+ORDER BY `serial_number`', [], false)
+ 5 SYSTEMPATH\Model.php(203): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(false, null)
+ 7 APPPATH\Controllers\Home.php(31): CodeIgniter\BaseModel->find()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->reloadPertanyaan()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\public\\index.php')
+INFO - 2023-06-16 17:09:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-16 17:09:01 --> mysqli_sql_exception: Table 'kuesioner.tbl_pertanyaan' doesn't exist in E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Model.php(203): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\BaseModel.php(557): CodeIgniter\Model->doFind(false, NULL)
+#6 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\app\Controllers\Home.php(31): CodeIgniter\BaseModel->find()
+#7 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->reloadPertanyaan()
+#8 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Ag...')
+#12 {main}
+CRITICAL - 2023-06-16 17:09:01 --> Table 'kuesioner.tbl_pertanyaan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `tbl_pertanyaan`
+ORDER BY `serial_number`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_pertanyaan`
+ORDER BY `serial_number`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_pertanyaan`
+ORDER BY `serial_number`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_pertanyaan`
+ORDER BY `serial_number`', [], false)
+ 5 SYSTEMPATH\Model.php(203): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(false, null)
+ 7 APPPATH\Controllers\Home.php(31): CodeIgniter\BaseModel->find()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->reloadPertanyaan()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\public\\index.php')
+INFO - 2023-06-16 17:11:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:11:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-16 17:11:47 --> mysqli_sql_exception: Unknown column 'kode_pertanyaan' in 'field list' in E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_per...', 0)
+#1 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_per...')
+#2 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_per...')
+#3 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_per...', Array, false)
+#4 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\app\Controllers\Pertanyaan.php(411): CodeIgniter\Model->update('1', Array)
+#8 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\app\Controllers\Pertanyaan.php(391): App\Controllers\Pertanyaan->generateKodePertanyaan()
+#9 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Pertanyaan->save()
+#10 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pertanyaan))
+#11 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Ag...')
+#14 {main}
+CRITICAL - 2023-06-16 17:11:47 --> Unknown column 'kode_pertanyaan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_pertanyaan` SET `kode_pertanyaan` = \'Q1\'
+WHERE `tbl_pertanyaan`.`pertanyaan_id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_pertanyaan` SET `kode_pertanyaan` = \'Q1\'
+WHERE `tbl_pertanyaan`.`pertanyaan_id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_pertanyaan` SET `kode_pertanyaan` = \'Q1\'
+WHERE `tbl_pertanyaan`.`pertanyaan_id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pertanyaan` SET `kode_pertanyaan` = :kode_pertanyaan:
+WHERE `tbl_pertanyaan`.`pertanyaan_id` IN :tbl_pertanyaan.pertanyaan_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Pertanyaan.php(411): CodeIgniter\Model->update('1', [...])
+ 9 APPPATH\Controllers\Pertanyaan.php(391): App\Controllers\Pertanyaan->generateKodePertanyaan()
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pertanyaan->save()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pertanyaan))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\public\\index.php')
+INFO - 2023-06-16 17:12:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:13:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:13:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:14:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:14:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:14:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-16 17:14:32 --> mysqli_sql_exception: Table 'kuesioner.tbl_jawaban' doesn't exist in E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Model.php(203): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\BaseModel.php(557): CodeIgniter\Model->doFind(false, NULL)
+#6 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\app\Controllers\Home.php(41): CodeIgniter\BaseModel->find()
+#7 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->reloadPertanyaan()
+#8 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Ag...')
+#12 {main}
+CRITICAL - 2023-06-16 17:14:32 --> Table 'kuesioner.tbl_jawaban' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `tbl_jawaban`
+WHERE `user_id` = \'1\'
+AND `pertanyaan_id` = \'4\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_jawaban`
+WHERE `user_id` = \'1\'
+AND `pertanyaan_id` = \'4\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_jawaban`
+WHERE `user_id` = \'1\'
+AND `pertanyaan_id` = \'4\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_jawaban`
+WHERE `user_id` = :user_id:
+AND `pertanyaan_id` = :pertanyaan_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(203): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(false, null)
+ 7 APPPATH\Controllers\Home.php(41): CodeIgniter\BaseModel->find()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->reloadPertanyaan()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\public\\index.php')
+INFO - 2023-06-16 17:15:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:15:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:15:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:15:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:15:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:15:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:15:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:15:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:15:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:15:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:15:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:15:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-16 17:27:10 --> mysqli_sql_exception: Unknown column 'jawban_id' in 'field list' in E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT count(ja...', 0)
+#1 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(ja...')
+#2 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(ja...')
+#3 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT count(ja...', Array, false)
+#4 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Model.php(203): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\BaseModel.php(557): CodeIgniter\Model->doFind(false, NULL)
+#6 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\app\Controllers\Jawaban.php(42): CodeIgniter\BaseModel->find()
+#7 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Jawaban->reloadDatatables()
+#8 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jawaban))
+#9 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Ag...')
+#12 {main}
+CRITICAL - 2023-06-16 17:27:10 --> Unknown column 'jawban_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT count(jawban_id) as jumlah_jawaban
+FROM `tbl_jawaban`
+GROUP BY `user_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(jawban_id) as jumlah_jawaban
+FROM `tbl_jawaban`
+GROUP BY `user_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(jawban_id) as jumlah_jawaban
+FROM `tbl_jawaban`
+GROUP BY `user_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT count(jawban_id) as jumlah_jawaban
+FROM `tbl_jawaban`
+GROUP BY `user_id`', [], false)
+ 5 SYSTEMPATH\Model.php(203): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(false, null)
+ 7 APPPATH\Controllers\Jawaban.php(42): CodeIgniter\BaseModel->find()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jawaban->reloadDatatables()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jawaban))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\public\\index.php')
+ERROR - 2023-06-16 17:33:38 --> mysqli_sql_exception: Expression #4 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'kuesioner.tbl_jawaban.jawaban' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT count(ja...', 0)
+#1 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(ja...')
+#2 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(ja...')
+#3 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT count(ja...', Array, false)
+#4 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\app\Models\JawabanModel.php(86): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\app\Controllers\Jawaban.php(63): App\Models\JawabanModel->getDatatables(Array)
+#6 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Jawaban->reloadDatatables()
+#7 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jawaban))
+#8 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Ag...')
+#11 {main}
+CRITICAL - 2023-06-16 17:33:38 --> Expression #4 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'kuesioner.tbl_jawaban.jawaban' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT count(jawaban_id) as jumlah_jawaban, `nama`, `tbl_jawaban`.`user_id`, `tbl_jawaban`.`jawaban`, `tbl_jawaban`.`jawaban_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(jawaban_id) as jumlah_jawaban, `nama`, `tbl_jawaban`.`user_id`, `tbl_jawaban`.`jawaban`, `tbl_jawaban`.`jawaban_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(jawaban_id) as jumlah_jawaban, `nama`, `tbl_jawaban`.`user_id`, `tbl_jawaban`.`jawaban`, `tbl_jawaban`.`jawaban_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT count(jawaban_id) as jumlah_jawaban, `nama`, `tbl_jawaban`.`user_id`, `tbl_jawaban`.`jawaban`, `tbl_jawaban`.`jawaban_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20', [], false)
+ 5 APPPATH\Models\JawabanModel.php(86): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jawaban.php(63): App\Models\JawabanModel->getDatatables([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jawaban->reloadDatatables()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jawaban))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\public\\index.php')
+ERROR - 2023-06-16 17:36:46 --> mysqli_sql_exception: Expression #8 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'kuesioner.tbl_jawaban.jawaban' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT count(ja...', 0)
+#1 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(ja...')
+#2 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(ja...')
+#3 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT count(ja...', Array, false)
+#4 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\app\Models\JawabanModel.php(90): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\app\Controllers\Jawaban.php(58): App\Models\JawabanModel->getDatatables(Array)
+#6 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Jawaban->reloadDatatables()
+#7 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jawaban))
+#8 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Ag...')
+#11 {main}
+CRITICAL - 2023-06-16 17:36:46 --> Expression #8 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'kuesioner.tbl_jawaban.jawaban' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT count(jawaban_id) as jumlah_jawaban, `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`, `tbl_jawaban`.`jawaban`, `tbl_jawaban`.`jawaban_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(jawaban_id) as jumlah_jawaban, `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`, `tbl_jawaban`.`jawaban`, `tbl_jawaban`.`jawaban_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(jawaban_id) as jumlah_jawaban, `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`, `tbl_jawaban`.`jawaban`, `tbl_jawaban`.`jawaban_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT count(jawaban_id) as jumlah_jawaban, `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`, `tbl_jawaban`.`jawaban`, `tbl_jawaban`.`jawaban_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20', [], false)
+ 5 APPPATH\Models\JawabanModel.php(90): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jawaban.php(58): App\Models\JawabanModel->getDatatables([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jawaban->reloadDatatables()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jawaban))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\public\\index.php')
+ERROR - 2023-06-16 17:37:27 --> mysqli_sql_exception: Expression #8 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'kuesioner.tbl_jawaban.jawaban' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT count(ja...', 0)
+#1 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(ja...')
+#2 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(ja...')
+#3 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT count(ja...', Array, false)
+#4 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\app\Models\JawabanModel.php(90): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\app\Controllers\Jawaban.php(58): App\Models\JawabanModel->getDatatables(Array)
+#6 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Jawaban->reloadDatatables()
+#7 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jawaban))
+#8 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Ag...')
+#11 {main}
+CRITICAL - 2023-06-16 17:37:27 --> Expression #8 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'kuesioner.tbl_jawaban.jawaban' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT count(jawaban_id) as jumlah_jawaban, `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`, `tbl_jawaban`.`jawaban`, `tbl_jawaban`.`jawaban_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(jawaban_id) as jumlah_jawaban, `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`, `tbl_jawaban`.`jawaban`, `tbl_jawaban`.`jawaban_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(jawaban_id) as jumlah_jawaban, `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`, `tbl_jawaban`.`jawaban`, `tbl_jawaban`.`jawaban_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT count(jawaban_id) as jumlah_jawaban, `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`, `tbl_jawaban`.`jawaban`, `tbl_jawaban`.`jawaban_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20', [], false)
+ 5 APPPATH\Models\JawabanModel.php(90): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jawaban.php(58): App\Models\JawabanModel->getDatatables([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jawaban->reloadDatatables()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jawaban))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\public\\index.php')
+ERROR - 2023-06-16 17:38:08 --> mysqli_sql_exception: Expression #8 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'kuesioner.tbl_jawaban.jawaban' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT count(ja...', 0)
+#1 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(ja...')
+#2 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(ja...')
+#3 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT count(ja...', Array, false)
+#4 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\app\Models\JawabanModel.php(90): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\app\Controllers\Jawaban.php(58): App\Models\JawabanModel->getDatatables(Array)
+#6 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Jawaban->reloadDatatables()
+#7 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jawaban))
+#8 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Ag...')
+#11 {main}
+CRITICAL - 2023-06-16 17:38:08 --> Expression #8 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'kuesioner.tbl_jawaban.jawaban' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT count(jawaban_id) as jumlah_jawaban, `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`, `tbl_jawaban`.`jawaban`, `tbl_jawaban`.`jawaban_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `tbl_jawaban`.`user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(jawaban_id) as jumlah_jawaban, `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`, `tbl_jawaban`.`jawaban`, `tbl_jawaban`.`jawaban_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `tbl_jawaban`.`user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(jawaban_id) as jumlah_jawaban, `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`, `tbl_jawaban`.`jawaban`, `tbl_jawaban`.`jawaban_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `tbl_jawaban`.`user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT count(jawaban_id) as jumlah_jawaban, `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`, `tbl_jawaban`.`jawaban`, `tbl_jawaban`.`jawaban_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `tbl_jawaban`.`user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20', [], false)
+ 5 APPPATH\Models\JawabanModel.php(90): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jawaban.php(58): App\Models\JawabanModel->getDatatables([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jawaban->reloadDatatables()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jawaban))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\public\\index.php')
+ERROR - 2023-06-16 17:39:02 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'kuesioner.tbl_user.nama'; this is incompatible with sql_mode=only_full_group_by in E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT count(ja...', 0)
+#1 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(ja...')
+#2 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(ja...')
+#3 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT count(ja...', Array, false)
+#4 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\app\Models\JawabanModel.php(89): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\app\Controllers\Jawaban.php(58): App\Models\JawabanModel->getDatatables(Array)
+#6 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Jawaban->reloadDatatables()
+#7 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jawaban))
+#8 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Ag...')
+#11 {main}
+CRITICAL - 2023-06-16 17:39:02 --> In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'kuesioner.tbl_user.nama'; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT count(jawaban_id) as jumlah_jawaban, `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`, `tbl_jawaban`.`jawaban`, `tbl_jawaban`.`jawaban_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(jawaban_id) as jumlah_jawaban, `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`, `tbl_jawaban`.`jawaban`, `tbl_jawaban`.`jawaban_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(jawaban_id) as jumlah_jawaban, `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`, `tbl_jawaban`.`jawaban`, `tbl_jawaban`.`jawaban_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT count(jawaban_id) as jumlah_jawaban, `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`, `tbl_jawaban`.`jawaban`, `tbl_jawaban`.`jawaban_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20', [], false)
+ 5 APPPATH\Models\JawabanModel.php(89): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jawaban.php(58): App\Models\JawabanModel->getDatatables([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jawaban->reloadDatatables()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jawaban))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\public\\index.php')
+ERROR - 2023-06-16 17:42:51 --> mysqli_sql_exception: Expression #7 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'kuesioner.tbl_jawaban.jawaban' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `nama`, ...', 0)
+#1 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama`, ...')
+#2 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama`, ...')
+#3 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `nama`, ...', Array, false)
+#4 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\app\Models\JawabanModel.php(89): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\app\Controllers\Jawaban.php(58): App\Models\JawabanModel->getDatatables(Array)
+#6 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Jawaban->reloadDatatables()
+#7 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jawaban))
+#8 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Ag...')
+#11 {main}
+CRITICAL - 2023-06-16 17:42:51 --> Expression #7 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'kuesioner.tbl_jawaban.jawaban' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`, `tbl_jawaban`.`jawaban`, `tbl_jawaban`.`jawaban_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `tbl_jawaban`.`user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`, `tbl_jawaban`.`jawaban`, `tbl_jawaban`.`jawaban_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `tbl_jawaban`.`user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`, `tbl_jawaban`.`jawaban`, `tbl_jawaban`.`jawaban_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `tbl_jawaban`.`user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`, `tbl_jawaban`.`jawaban`, `tbl_jawaban`.`jawaban_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `tbl_jawaban`.`user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20', [], false)
+ 5 APPPATH\Models\JawabanModel.php(89): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jawaban.php(58): App\Models\JawabanModel->getDatatables([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jawaban->reloadDatatables()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jawaban))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\public\\index.php')
+ERROR - 2023-06-16 17:44:42 --> mysqli_sql_exception: Expression #7 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'kuesioner.tbl_jawaban.jawaban' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `nama`, ...', 0)
+#1 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama`, ...')
+#2 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama`, ...')
+#3 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `nama`, ...', Array, false)
+#4 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\app\Models\JawabanModel.php(90): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\app\Controllers\Jawaban.php(58): App\Models\JawabanModel->getDatatables(Array)
+#6 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Jawaban->reloadDatatables()
+#7 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jawaban))
+#8 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Ag...')
+#11 {main}
+CRITICAL - 2023-06-16 17:44:42 --> Expression #7 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'kuesioner.tbl_jawaban.jawaban' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`, `tbl_jawaban`.`jawaban`, `tbl_jawaban`.`jawaban_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `tbl_jawaban`.`user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`, `tbl_jawaban`.`jawaban`, `tbl_jawaban`.`jawaban_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `tbl_jawaban`.`user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`, `tbl_jawaban`.`jawaban`, `tbl_jawaban`.`jawaban_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `tbl_jawaban`.`user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`, `tbl_jawaban`.`jawaban`, `tbl_jawaban`.`jawaban_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `tbl_jawaban`.`user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20', [], false)
+ 5 APPPATH\Models\JawabanModel.php(90): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jawaban.php(58): App\Models\JawabanModel->getDatatables([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jawaban->reloadDatatables()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jawaban))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\public\\index.php')
+ERROR - 2023-06-16 17:45:42 --> mysqli_sql_exception: Expression #7 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'kuesioner.tbl_jawaban.jawaban' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `nama`, ...', 0)
+#1 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama`, ...')
+#2 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama`, ...')
+#3 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `nama`, ...', Array, false)
+#4 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\app\Models\JawabanModel.php(89): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\app\Controllers\Jawaban.php(58): App\Models\JawabanModel->getDatatables(Array)
+#6 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Jawaban->reloadDatatables()
+#7 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jawaban))
+#8 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Ag...')
+#11 {main}
+CRITICAL - 2023-06-16 17:45:42 --> Expression #7 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'kuesioner.tbl_jawaban.jawaban' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`, `tbl_jawaban`.`jawaban`, `tbl_jawaban`.`jawaban_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `tbl_jawaban`.`user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`, `tbl_jawaban`.`jawaban`, `tbl_jawaban`.`jawaban_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `tbl_jawaban`.`user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`, `tbl_jawaban`.`jawaban`, `tbl_jawaban`.`jawaban_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `tbl_jawaban`.`user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`, `tbl_jawaban`.`jawaban`, `tbl_jawaban`.`jawaban_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `tbl_jawaban`.`user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20', [], false)
+ 5 APPPATH\Models\JawabanModel.php(89): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jawaban.php(58): App\Models\JawabanModel->getDatatables([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jawaban->reloadDatatables()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jawaban))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\public\\index.php')
+ERROR - 2023-06-16 17:45:57 --> mysqli_sql_exception: Expression #1 of ORDER BY clause is not in GROUP BY clause and contains nonaggregated column 'kuesioner.tbl_jawaban.jawaban_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `nama`, ...', 0)
+#1 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama`, ...')
+#2 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama`, ...')
+#3 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `nama`, ...', Array, false)
+#4 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\app\Models\JawabanModel.php(87): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\app\Controllers\Jawaban.php(58): App\Models\JawabanModel->getDatatables(Array)
+#6 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Jawaban->reloadDatatables()
+#7 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jawaban))
+#8 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Ag...')
+#11 {main}
+CRITICAL - 2023-06-16 17:45:57 --> Expression #1 of ORDER BY clause is not in GROUP BY clause and contains nonaggregated column 'kuesioner.tbl_jawaban.jawaban_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `tbl_jawaban`.`user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `tbl_jawaban`.`user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `tbl_jawaban`.`user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `tbl_jawaban`.`user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20', [], false)
+ 5 APPPATH\Models\JawabanModel.php(87): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jawaban.php(58): App\Models\JawabanModel->getDatatables([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jawaban->reloadDatatables()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jawaban))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\public\\index.php')
+ERROR - 2023-06-16 17:47:50 --> mysqli_sql_exception: Expression #1 of ORDER BY clause is not in GROUP BY clause and contains nonaggregated column 'kuesioner.tbl_jawaban.jawaban_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `nama`, ...', 0)
+#1 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama`, ...')
+#2 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama`, ...')
+#3 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `nama`, ...', Array, false)
+#4 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\app\Models\JawabanModel.php(86): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\app\Controllers\Jawaban.php(58): App\Models\JawabanModel->getDatatables(Array)
+#6 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Jawaban->reloadDatatables()
+#7 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jawaban))
+#8 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\Agung TMI\Agung Pribadi\Web Development\kuesioner\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Ag...')
+#11 {main}
+CRITICAL - 2023-06-16 17:47:50 --> Expression #1 of ORDER BY clause is not in GROUP BY clause and contains nonaggregated column 'kuesioner.tbl_jawaban.jawaban_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `tbl_jawaban`.`user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `tbl_jawaban`.`user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `tbl_jawaban`.`user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `nama`, `institusi`, `prodi`, `wilayah`, `user_identitas`, `tbl_jawaban`.`user_id`
+FROM `tbl_jawaban`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_jawaban`.`user_id`
+GROUP BY `tbl_jawaban`.`user_id`
+ORDER BY `jawaban_id` DESC
+ LIMIT 20', [], false)
+ 5 APPPATH\Models\JawabanModel.php(86): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jawaban.php(58): App\Models\JawabanModel->getDatatables([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jawaban->reloadDatatables()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jawaban))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\public\\index.php')
+CRITICAL - 2023-06-16 17:48:03 --> Undefined array key "jawaban_id"
+in APPPATH\Controllers\Jawaban.php on line 68.
+ 1 APPPATH\Controllers\Jawaban.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jawaban_id"', 'E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\app\\Controllers\\Jawaban.php', 68)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jawaban->reloadDatatables()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jawaban))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\public\\index.php')
+INFO - 2023-06-16 17:50:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:50:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:50:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:50:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:50:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:50:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:50:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:50:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:50:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:50:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:50:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:50:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:50:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:50:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:50:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:50:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:50:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:50:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:50:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:50:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:50:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:50:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:52:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:52:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:53:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:53:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:53:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:53:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:53:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:53:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:53:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:53:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:53:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:53:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:53:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 17:53:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-16 18:11:34 --> Undefined array key "name"
+in APPPATH\Controllers\Jawaban.php on line 42.
+ 1 APPPATH\Controllers\Jawaban.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\app\\Controllers\\Jawaban.php', 42)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jawaban->detail('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jawaban))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\public\\index.php')
+CRITICAL - 2023-06-16 18:11:54 --> Undefined variable $user
+in APPPATH\Views\jawaban\detail.php on line 15.
+ 1 APPPATH\Views\jawaban\detail.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\app\\Views\\jawaban\\detail.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\app\\Views\\jawaban\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jawaban/detail', [], true)
+ 5 APPPATH\Controllers\Jawaban.php(45): view('jawaban/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jawaban->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jawaban))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\public\\index.php')
+INFO - 2023-06-16 18:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 18:16:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 18:17:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 18:17:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 18:17:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 18:17:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 18:17:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 18:17:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-16 18:20:30 --> Undefined variable $user
+in APPPATH\Views\jawaban\assets\view-pertanyaan.php on line 6.
+ 1 APPPATH\Views\jawaban\assets\view-pertanyaan.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\app\\Views\\jawaban\\assets\\view-pertanyaan.php', 6)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\app\\Views\\jawaban\\assets\\view-pertanyaan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jawaban/assets/view-pertanyaan', [], true)
+ 5 APPPATH\Controllers\Jawaban.php(111): view('jawaban/assets/view-pertanyaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jawaban->reloadPertanyaan('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jawaban))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\public\\index.php')
+CRITICAL - 2023-06-16 18:28:20 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Jawaban.php on line 68.
+ 1 APPPATH\Controllers\Jawaban.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\app\\Controllers\\Jawaban.php', 68)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jawaban->reloadPertanyaan('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jawaban))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\public\\index.php')
+CRITICAL - 2023-06-16 18:29:02 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Jawaban.php on line 68.
+ 1 APPPATH\Controllers\Jawaban.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\app\\Controllers\\Jawaban.php', 68)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jawaban->reloadPertanyaan('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jawaban))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\public\\index.php')
+CRITICAL - 2023-06-16 18:29:52 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Jawaban.php on line 68.
+ 1 APPPATH\Controllers\Jawaban.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\app\\Controllers\\Jawaban.php', 68)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jawaban->reloadPertanyaan('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jawaban))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung TMI\\Agung Pribadi\\Web Development\\kuesioner\\public\\index.php')
+INFO - 2023-06-16 18:52:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 18:52:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 18:52:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 18:52:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 18:52:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 18:52:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 18:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 18:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 18:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 18:52:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 18:52:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 18:52:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 18:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 18:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 18:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 18:52:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 18:52:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 18:52:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 18:52:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

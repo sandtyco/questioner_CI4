@@ -1,0 +1,285 @@
+CRITICAL - 2023-06-11 12:28:42 --> Invalid file: "layout.template"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout.template')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout.template', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('layout.template')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung\\kuesioner\\public\\index.php')
+CRITICAL - 2023-06-11 12:29:23 --> Invalid file: "layout.template"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout.template')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout.template', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('layout.template')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung\\kuesioner\\public\\index.php')
+CRITICAL - 2023-06-11 12:39:19 --> Undefined variable: page
+in APPPATH\Views\layout\template.php on line 61.
+ 1 APPPATH\Views\layout\template.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: page', 'E:\\Agung\\kuesioner\\app\\Views\\layout\\template.php', 61, [])
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\Agung\\kuesioner\\app\\Views\\layout\\template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/template', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('layout/template')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung\\kuesioner\\public\\index.php')
+ERROR - 2023-06-11 13:35:15 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 E:\Agung\kuesioner\app\Controllers\User.php(114): CodeIgniter\Model->insert(Array)
+#8 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\User->import()
+#9 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#10 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\Agung\kuesioner\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\Agung\\kuesio...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#3 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#4 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#5 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#6 E:\Agung\kuesioner\app\Controllers\User.php(114): CodeIgniter\Model->insert(Array)
+#7 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\User->import()
+#8 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\Agung\kuesioner\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\Agung\\kuesio...')
+#12 {main}
+CRITICAL - 2023-06-11 13:35:15 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_user` (`email`, `password`, `user_identitas`, `nama`, `institusi`, `wilayah`, `prodi`, `status_mahasiswa`) VALUES (:email:, :password:, :user_identitas:, :nama:, :institusi:, :wilayah:, :prodi:, :status_mahasiswa:)', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\User.php(114): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->import()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung\\kuesioner\\public\\index.php')
+CRITICAL - 2023-06-11 13:36:46 --> Maximum execution time of 60 seconds exceeded
+in APPPATH\Controllers\BaseController.php on line 62.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-11 13:38:54 --> Maximum execution time of 60 seconds exceeded
+in APPPATH\Controllers\BaseController.php on line 62.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-11 13:43:14 --> Maximum execution time of 60 seconds exceeded
+in APPPATH\Controllers\BaseController.php on line 62.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-11 13:52:19 --> Maximum execution time of 60 seconds exceeded
+in APPPATH\Controllers\BaseController.php on line 62.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-11 14:04:51 --> Maximum execution time of 60 seconds exceeded
+in APPPATH\Controllers\BaseController.php on line 62.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2023-06-11 14:20:01 --> mysqli_sql_exception: Unknown column 'periode_akademik_id' in 'where clause' in E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\Agung\kuesioner\app\Models\UserModel.php(96): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Agung\kuesioner\app\Controllers\User.php(163): App\Models\UserModel->getDatatables(Array)
+#6 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\User->reloadDatatables()
+#7 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\Agung\kuesioner\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\Agung\\kuesio...')
+#11 {main}
+CRITICAL - 2023-06-11 14:20:01 --> Unknown column 'periode_akademik_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `tbl_user`
+WHERE `periode_akademik_id` IS NULL
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_user`
+WHERE `periode_akademik_id` IS NULL
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_user`
+WHERE `periode_akademik_id` IS NULL
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_user`
+WHERE `periode_akademik_id` IS NULL
+ LIMIT 20', [], false)
+ 5 APPPATH\Models\UserModel.php(96): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\User.php(163): App\Models\UserModel->getDatatables([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->reloadDatatables()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung\\kuesioner\\public\\index.php')
+ERROR - 2023-06-11 14:20:01 --> mysqli_sql_exception: Unknown column 'periode_akademik_id' in 'where clause' in E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\Agung\kuesioner\app\Models\UserModel.php(96): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Agung\kuesioner\app\Controllers\User.php(163): App\Models\UserModel->getDatatables(Array)
+#6 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\User->reloadDatatables()
+#7 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\Agung\kuesioner\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\Agung\\kuesio...')
+#11 {main}
+CRITICAL - 2023-06-11 14:20:01 --> Unknown column 'periode_akademik_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `tbl_user`
+WHERE `periode_akademik_id` IS NULL
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_user`
+WHERE `periode_akademik_id` IS NULL
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_user`
+WHERE `periode_akademik_id` IS NULL
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_user`
+WHERE `periode_akademik_id` IS NULL
+ LIMIT 20', [], false)
+ 5 APPPATH\Models\UserModel.php(96): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\User.php(163): App\Models\UserModel->getDatatables([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->reloadDatatables()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung\\kuesioner\\public\\index.php')
+ERROR - 2023-06-11 14:20:11 --> mysqli_sql_exception: Unknown column 'periode_akademik_id' in 'where clause' in E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\Agung\kuesioner\app\Models\UserModel.php(96): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Agung\kuesioner\app\Controllers\User.php(163): App\Models\UserModel->getDatatables(Array)
+#6 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\User->reloadDatatables()
+#7 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\Agung\kuesioner\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\Agung\\kuesio...')
+#11 {main}
+CRITICAL - 2023-06-11 14:20:11 --> Unknown column 'periode_akademik_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `tbl_user`
+WHERE `periode_akademik_id` IS NULL
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_user`
+WHERE `periode_akademik_id` IS NULL
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_user`
+WHERE `periode_akademik_id` IS NULL
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_user`
+WHERE `periode_akademik_id` IS NULL
+ LIMIT 20', [], false)
+ 5 APPPATH\Models\UserModel.php(96): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\User.php(163): App\Models\UserModel->getDatatables([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->reloadDatatables()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung\\kuesioner\\public\\index.php')
+ERROR - 2023-06-11 14:20:11 --> mysqli_sql_exception: Unknown column 'periode_akademik_id' in 'where clause' in E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\Agung\kuesioner\app\Models\UserModel.php(96): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Agung\kuesioner\app\Controllers\User.php(163): App\Models\UserModel->getDatatables(Array)
+#6 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\User->reloadDatatables()
+#7 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\Agung\kuesioner\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\Agung\kuesioner\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\Agung\\kuesio...')
+#11 {main}
+CRITICAL - 2023-06-11 14:20:11 --> Unknown column 'periode_akademik_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `tbl_user`
+WHERE `periode_akademik_id` IS NULL
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_user`
+WHERE `periode_akademik_id` IS NULL
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_user`
+WHERE `periode_akademik_id` IS NULL
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_user`
+WHERE `periode_akademik_id` IS NULL
+ LIMIT 20', [], false)
+ 5 APPPATH\Models\UserModel.php(96): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\User.php(163): App\Models\UserModel->getDatatables([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->reloadDatatables()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung\\kuesioner\\public\\index.php')
+CRITICAL - 2023-06-11 14:20:25 --> Undefined index: where
+in APPPATH\Models\UserModel.php on line 75.
+ 1 APPPATH\Models\UserModel.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: where', 'E:\\Agung\\kuesioner\\app\\Models\\UserModel.php', 75, [...])
+ 2 APPPATH\Models\UserModel.php(93): App\Models\UserModel->getDatatablesQuery([...])
+ 3 APPPATH\Controllers\User.php(160): App\Models\UserModel->getDatatables([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->reloadDatatables()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung\\kuesioner\\public\\index.php')
+CRITICAL - 2023-06-11 14:20:25 --> Undefined index: where
+in APPPATH\Models\UserModel.php on line 75.
+ 1 APPPATH\Models\UserModel.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: where', 'E:\\Agung\\kuesioner\\app\\Models\\UserModel.php', 75, [...])
+ 2 APPPATH\Models\UserModel.php(93): App\Models\UserModel->getDatatablesQuery([...])
+ 3 APPPATH\Controllers\User.php(160): App\Models\UserModel->getDatatables([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->reloadDatatables()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung\\kuesioner\\public\\index.php')
+CRITICAL - 2023-06-11 14:21:08 --> Undefined index: status
+in APPPATH\Controllers\User.php on line 178.
+ 1 APPPATH\Controllers\User.php(178): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'E:\\Agung\\kuesioner\\app\\Controllers\\User.php', 178, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->reloadDatatables()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung\\kuesioner\\public\\index.php')
+CRITICAL - 2023-06-11 14:21:09 --> Undefined index: status
+in APPPATH\Controllers\User.php on line 178.
+ 1 APPPATH\Controllers\User.php(178): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'E:\\Agung\\kuesioner\\app\\Controllers\\User.php', 178, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->reloadDatatables()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Agung\\kuesioner\\public\\index.php')
